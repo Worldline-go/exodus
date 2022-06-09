@@ -5,12 +5,6 @@ import (
 	"testing"
 )
 
-type tester struct {
-	sliceOne interface{}
-	sliceTwo interface{}
-	want     interface{}
-}
-
 func TestConcat(t *testing.T) {
 	is := is.New(t)
 	f := func(given [][]int, expected []int) {
